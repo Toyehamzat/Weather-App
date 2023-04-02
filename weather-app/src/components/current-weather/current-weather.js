@@ -16,27 +16,24 @@ function CurrentWeather({data}) {
         />
       </div>
       <div className="bottom">
-        <div className="temperature">{Math.round(data.main.temp)}°C</div>
+        <div className="temperature">{Math.round(data.main.temp)}°</div>
         <div className="details">
           <div className="parameter-row">
-            <span className="parameter-label">Details</span>
+          <img src="weather-icon/a07ff62978fad3b36c29.png" alt="weather" className="details-icon"/>
+            <span className="parameter-value">{data.wind.speed}</span>
+            <span className="parameter-label">Wind | m/s</span>
           </div>
           <div className="parameter-row">
-            <span className="parameter-label">feels like</span>
-            <span className="parameter-value">{Math.round(data.main.feels_like)}°C</span>
+          <img src="weather-icon/23ccd1b0ec73d8875c1f.png" alt="weather" className="details-icon"/>
+            <span className="parameter-value">{data.main.humidity}</span>
+            <span className="parameter-label">Humidity | %</span>
           </div>
           <div className="parameter-row">
-            <span className="parameter-label">wind </span>
-            <span className="parameter-value">{data.wind.speed}m/s </span>
+            <img src="weather-icon/daac1395a5e8e0cd4b47.png" alt="weather" className="details-icon"/>
+            <span className="parameter-value">{data.main.pressure}</span>
+            <span className="parameter-label">Pressure | hPa</span>
           </div>
-          <div className="parameter-row">
-            <span className="parameter-label">humidity</span>
-            <span className="parameter-value">{data.main.humidity}%</span>
-          </div>
-          <div className="parameter-row">
-            <span className="parameter-label">pressure</span>
-            <span className="parameter-value">{data.main.pressure}hpa</span>
-          </div>
+    
         </div>
       </div>
     </div>
