@@ -1,9 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
+  scroll-behavior: smooth;
   margin: 0;
   font-family: "Roboto", Arial !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d5d4d4;
+  background-image:url("../public/weather-icon/pexels-snapwire-18534.jpg");
+  background-repeat:no-repeat;
+  background-position: fixed;
+  background-clip: border-box;
+  background-size:cover;
+  height: 100vh;
+  overscroll-behavior-block:contain;
+
 }
 
 code {
