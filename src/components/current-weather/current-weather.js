@@ -2,6 +2,9 @@ import "./current-weather.css";
 import React from "react";
 
 function CurrentWeather({data}) {
+
+    console.log(data)
+
   return (
     <div className="weather">
       <div className="top">
