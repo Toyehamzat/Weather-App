@@ -2,15 +2,16 @@ import "./App.css";
 import Search from "./components/search/search";
 import CurrentWeather from "./components/current-weather/current-weather";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "../src/components/Api";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Forecast from "./components/forecast/forecast";
+
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
 
   const [forecast, setForecast] = useState(null);
 
-  const defaultValue = { value: "51.5072 0.1276", label: "Lagos,NG" };
+  // const defaultValue = { value: "51.5072 0.1276", label: "Lagos,NG" };
 
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
@@ -32,9 +33,9 @@ function App() {
       .catch(console.log);
   };
 
-  useEffect(() => {
-    handleOnSearchChange(defaultValue);
-  }, []);
+  // useEffect(() => {
+  //   handleOnSearchChange(defaultValue);
+  // }, []);
 
   console.log(currentWeather);
   console.log(forecast);
