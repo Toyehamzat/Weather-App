@@ -31,7 +31,10 @@ export default function Forecast({ data }) {
   }, []);
   return (
     <>
-      <label className="title">7-Days Forecast</label>
+      <div className="title-container">
+        <label className="title">7-Days Weather forecast</label>
+      </div>
+
       <Accordion allowZeroExpanded>
         {data.list.splice(0, 7).map((item, idx) => (
           <AccordionItem key={idx}>

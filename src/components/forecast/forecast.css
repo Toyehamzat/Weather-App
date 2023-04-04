@@ -47,7 +47,7 @@
 
 .daily-details-grid {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
     row-gap: 0;
     column-gap: 80px;
     flex: 1 1;
@@ -78,4 +78,24 @@
 }
 .daily-details-grid-item label:last-child{
     color:#e7e7e7
+}
+@media(max-width:700px){
+    .daily-details-grid{
+        grid-template-columns: auto;
+    }
+}
+@media(max-width:420px){
+    label.title{
+        font-size: 17px;
+        padding: 0;
+      }
+    .title-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .daily-details-grid{
+        grid-template-columns: auto;
+    }
 }

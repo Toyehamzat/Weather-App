@@ -10,11 +10,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image:url("../public/weather-icon/pexels-snapwire-18534.jpg");
   background-repeat:no-repeat;
-  background-position: fixed;
   background-clip: border-box;
   background-size:cover;
-  height: 100vh;
+  height: 100%;
   overscroll-behavior-block:contain;
+  background-color: rgb(60, 60, 72);
 
 }
 

@@ -10,7 +10,7 @@ function App() {
 
   const [forecast, setForecast] = useState(null);
 
-    const defaultValue = { value:"6.52, 3.37" , label:"Lagos,NG" }
+    const defaultValue = { value:"6.5244 3.3792" , label:"Lagos,NG" }
 
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");

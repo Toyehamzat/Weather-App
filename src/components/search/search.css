@@ -1,6 +1,6 @@
 
 .css-b62m3t-container{
-    width: 414px;
+    width: 370px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -27,9 +27,7 @@
 #react-select-3-live-region,#react-select-3-input{
     border: none;
     background-color: transparent;
-    backdrop-filter: blur(1px);
     outline: none;
-    -webkit-backdrop-filter: blur(4.6px);
     border: 1px solid rgba(255, 255, 255, 0.07);
 
 }
@@ -44,8 +42,15 @@
 #react-select-3-listbox{
     border: none;
     background-color: transparent;
-    backdrop-filter: blur(1px);
+    position: relative;
     outline: none;
-    -webkit-backdrop-filter: blur(4.6px);
     border: 1px solid rgba(255, 255, 255, 0.07);
+    transition: all 1s ease-in-out;
+}
+
+@media(max-width:420px){
+    .css-b62m3t-container{
+        width: 414px;
+    }
+
 }

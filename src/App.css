@@ -5,18 +5,5 @@
   margin: 20px auto;
 }
 
-@media(max-width:420px){
-  label.title{
-    font-size: 17px;
 
-  }
-  .daily-details-grid-item {
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    height: 20px;
-    display: flex;
- 
-}
 
-}
